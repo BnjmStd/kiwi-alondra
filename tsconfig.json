@@ -3,15 +3,26 @@
   "compilerOptions": {
     "strict": true,
     "paths": {
-      "@/*": [
-        "./*"
-      ]
+      "@/*": ["./*"],
+      "@/auth/*": ["./src/modules/auth/*"],
+      "@/auth/types": ["./src/modules/auth/types/index.ts"],
+      "@/medications/*": ["./src/modules/medications/*"],
+      "@/medications/types": ["./src/modules/medications/types/index.ts"],
+      "@/calculations/*": ["./src/modules/calculations/*"],
+      "@/calculations/types": ["./src/modules/calculations/types/index.ts"],
+      "@/precautions/*": ["./src/modules/precautions/*"],
+      "@/precautions/types": ["./src/modules/precautions/types/index.ts"],
+      "@/shared/*": ["./src/shared/*"],
+      "@/components/*": ["./components/*"],
+      "@/constants/*": ["./constants/*"],
+      "@/hooks/*": ["./hooks/*"]
     }
   },
   "include": [
     "**/*.ts",
     "**/*.tsx",
     ".expo/types/**/*.ts",
-    "expo-env.d.ts"
+    "expo-env.d.ts",
+    "src/**/*"
   ]
 }
